@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Resgistro-Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="row">
+            <h1 class="Tittle">Validacion de Formulario</h1>
+            <!-- Incio Formulario -->
+            <form id="formUser" action="" method="post">
+                <div class="border-form">
+                    <div class="info">
+                        <label for="input-user">Usuario</label>
+                        <div class="border-input">
+                            <input type="text" name="user" id="inputUser">
+                        </div>
+                        <p class="error-user">(Debe estar entre 5 y 15 letras)</p>
+                    </div>
+                    <div class="info">
+                        <label for="input-name">Nombre</label>
+                        <div class="border-input">
+                            <input type="text" name="name-user" id="inputName">
+                        </div>
+                        <p class="error-user">(Solo un nombre Porfavor)</p>
+                    </div>
+                    <div class="info">
+                        <label for="password-user">Contraseña</label>
+                        <div class="border-input border-input-error">
+                            <input type="password" name="pass-user" id="passwordUser">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <label for="repit-password">Repetir Contraseña</label>
+                        <div class="border-input border-input-error">
+                            <input type="password" name="rpt-pass" id="repitPassword">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- link a js -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
